@@ -21,7 +21,17 @@ Mouse-following flight controls for **Flyout**, with an aim circle, a nose marke
 
 No separate robotics mod or MCP bridge is required to use these controls.
 
-## Installation
+## Optional automatic installer
+
+Download **War-Thunder-Style-Mouse-Controls-v1-Optional-Installer.exe** from the Releases page if you prefer automatic folder detection. This is **optional**; the manual ZIP works too.
+
+Close Flyout, run the installer, and click **Install mod**. It finds Flyout through Steam's registry entry and library folders, including libraries on other drives. If several installations are found, choose the one you use. If detection fails, use **Browse** to select the folder containing `Flyout.exe`.
+
+The installer contains the mod DLL; it does not need to download it. It verifies the selected game folder and requires an existing MelonLoader installation. It does not install Steam, Flyout, or MelonLoader. Install MelonLoader 0.7.3 first using the official guide above. Existing settings are preserved, and an old mod DLL is backed up under `<Flyout>/UserData/FlyoutMouseAim-Backups/`. It refuses installation while Flyout is running. An administrator launch may be needed if your game folder is protected.
+
+The executable is unsigned and uses Windows' .NET Framework 4.x. You can always use the ZIP instead.
+
+## Manual installation
 
 1. Close Flyout.
 2. In Steam, open Flyout → Manage → Browse local files. This is the folder containing `Flyout.exe`.
@@ -102,6 +112,16 @@ dotnet run -c Release --project tests/SimTests.csproj
 ```
 
 The build uses your locally installed game/loader assemblies; those dependencies are not redistributed. Output: `bin/Release/net6.0/FlyoutMouseAim.dll`.
+
+## Building the optional installer
+
+On Windows, first build the mod in Release mode, then run:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File installer/build.ps1
+```
+
+Output: `bin/installer/War-Thunder-Style-Mouse-Controls-v1-Optional-Installer.exe`. The build embeds your compiled mod DLL and uses the Windows .NET Framework compiler. Run the executable with `--self-test` for isolated fixture checks, or `--detect-only` to write detected game folders without installing anything. These diagnostic modes write their report beside the executable.
 
 ## Credits and license
 

@@ -10,6 +10,7 @@ First public release as **War Thunder Style Mouse Controls v1**.
 - Optional bounded artificial yaw stability, enabled at 65%.
 - Manual-axis override, native autopilot handoff, and F9 release.
 - F12 guide automatically appears for six seconds on each flight start.
+- Added an optional Windows installer with Steam library detection, folder validation, existing-settings preservation, DLL backup, and a manual folder picker.
 - Existing `FlyoutMouseAim.dll` filename and settings retained for upgrades.
 
 Based on internal development versions 0.3.0 through 0.3.2. The public version number marks the first packaged release, not a guarantee that every aircraft layout is supported.

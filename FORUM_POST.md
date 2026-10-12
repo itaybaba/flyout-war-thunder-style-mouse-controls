@@ -9,6 +9,8 @@ It includes smooth mouse sensitivity, fine corrections, free look, manual contro
 
 **Install:** Requires Windows x64, Flyout, and MelonLoader 0.7.3. Close the game, extract the ZIP's `Mods` folder into the folder containing `Flyout.exe`, then restart. In flight, press **F2**.
 
+An **Optional Installer** EXE is also available in the release. It finds the Steam game folder and installs the mod after you click Install mod. MelonLoader must already be installed; the manual ZIP remains available.
+
 **Controls:** F2 mouse flight · hold Left Alt for free look · wheel zoom · F6 HUD · F7 mod on/off · F9 release · F12 instructions. The instructions also appear for six seconds when a flight starts.
 
 Tested game build: Flyout 0.2409. Intended for single-player fixed-wing aircraft. The refined controller was checked on several aircraft, and paired t7 tests showed better fine aim and yaw recovery. Unusual layouts may need different settings; please report problems with your game version, aircraft description, and steps to reproduce them.

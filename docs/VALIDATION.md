@@ -38,3 +38,7 @@ Same native air-start conditions for both runs: 2,500 m, 180 m/s, throttle 0.6. 
 Recovery used 24 samples after a 0.3 rudder input lasting 0.6 seconds. It includes aiming control and coupled aircraft motion, not isolated free oscillation. Both runs had zero mod errors, stayed above 1,950 m sampled radar height, and confirmed that assistance yielded during the direct rudder lease. Endpoint errors are not settling-time or overshoot measurements.
 
 One paired run demonstrates improvement on t7; it does not establish universal aircraft behavior. Early descending development runs with terrain contact were excluded. The yaw controller is unchanged from this accepted test; only display/version/startup help changed afterward.
+
+## Optional installer checks (2026-10-12)
+
+The standalone Windows installer was compiled with the .NET Framework compiler. Automated fixture checks passed for modern and legacy Steam library lists, a library on a separate path containing spaces, fresh installation, replacement with backup, exact embedded-payload preservation, unchanged settings, missing-loader rejection, and wrong-folder rejection. Detection-only mode found the existing Flyout installation on a secondary drive. No live game files were changed by these checks. The form itself has not been visually inspected.
