@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\src\Instructor.cs" Link="Instructor.cs" />
+    <Compile Include="..\src\MouseResponse.cs" Link="MouseResponse.cs" />
+    <Compile Include="..\src\AoaEnvelope.cs" Link="AoaEnvelope.cs" />
+      <Compile Include="..\src\YawStabilizer.cs" Link="YawStabilizer.cs" />
+  </ItemGroup>
+</Project>

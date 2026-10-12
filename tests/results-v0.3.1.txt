@@ -1,0 +1,100 @@
+PASS  20deg right @30fps  settle=4.43s overshoot=2.63deg final=0.14deg rollFlips=0
+PASS  20deg up @30fps  settle=1.43s overshoot=0.00deg final=0.09deg rollFlips=0
+PASS  20deg down @30fps  settle=2.23s overshoot=2.68deg final=0.14deg rollFlips=0
+PASS  20deg diag @30fps  settle=1.47s overshoot=1.97deg final=0.10deg rollFlips=0
+PASS  20deg right @60fps  settle=4.42s overshoot=2.62deg final=0.14deg rollFlips=0
+PASS  20deg up @60fps  settle=1.42s overshoot=0.00deg final=0.09deg rollFlips=0
+PASS  20deg down @60fps  settle=2.28s overshoot=2.74deg final=0.15deg rollFlips=0
+PASS  20deg diag @60fps  settle=1.43s overshoot=1.97deg final=0.10deg rollFlips=0
+PASS  20deg right @120fps  settle=4.42s overshoot=2.62deg final=0.14deg rollFlips=0
+PASS  20deg up @120fps  settle=1.36s overshoot=0.00deg final=0.09deg rollFlips=0
+PASS  20deg down @120fps  settle=2.28s overshoot=2.72deg final=0.15deg rollFlips=0
+PASS  20deg diag @120fps  settle=1.46s overshoot=1.97deg final=0.10deg rollFlips=0
+PASS  steady hold 30s  final=0.02deg (trim moment present)
+PASS  large turn 90deg right  final=0.02deg settle=6.58s maxAoA=11.6 rollFlips=0
+PASS  large turn 150deg behind-left  final=0.06deg settle=8.53s maxAoA=11.7 rollFlips=0
+PASS  large turn 180deg dead astern  final=0.09deg settle=9.92s maxAoA=11.5 rollFlips=0
+PASS  large turn 60deg up  final=0.00deg settle=2.72s maxAoA=11.5 rollFlips=0
+PASS  inverted start  final=0.00deg
+PASS  near-vertical climb target  final=0.00deg
+PASS  AoA limit respected  maxAoA=12.1deg limit=10
+PASS  invalid telemetry recovery  final=0.20deg
+PASS  authority x0.3  settle=8.45s final=0.34 overshoot=3.56
+PASS  authority x0.6  settle=5.62s final=0.21 overshoot=3.19
+PASS  authority x2  settle=1.43s final=0.03 overshoot=1.63
+PASS  authority x4  settle=1.28s final=0.00 overshoot=1.45
+PASS  authority x6  settle=1.25s final=0.00 overshoot=1.40
+PASS  speed 40 m/s  settle=6.78s final=0.67 overshoot=2.55 rollFlips=0
+PASS  speed 70 m/s  settle=4.72s final=0.31 overshoot=2.19 rollFlips=0
+PASS  speed 200 m/s  settle=3.93s final=0.03 overshoot=2.34 rollFlips=0
+PASS  fine -0.5deg @30fps  final=0.020 overshoot=0.103
+PASS  fine 0.5deg @30fps  final=0.000 overshoot=0.101
+PASS  fine -1deg @30fps  final=0.000 overshoot=0.199
+PASS  fine 1deg @30fps  final=0.020 overshoot=0.199
+PASS  fine -3deg @30fps  final=0.028 overshoot=0.594
+PASS  fine 3deg @30fps  final=0.020 overshoot=0.595
+PASS  fine -5deg @30fps  final=0.000 overshoot=1.000
+PASS  fine 5deg @30fps  final=0.020 overshoot=0.998
+PASS  fine -0.5deg @60fps  final=0.020 overshoot=0.101
+PASS  fine 0.5deg @60fps  final=0.000 overshoot=0.101
+PASS  fine -1deg @60fps  final=0.020 overshoot=0.198
+PASS  fine 1deg @60fps  final=0.020 overshoot=0.198
+PASS  fine -3deg @60fps  final=0.020 overshoot=0.590
+PASS  fine 3deg @60fps  final=0.028 overshoot=0.590
+PASS  fine -5deg @60fps  final=0.000 overshoot=0.993
+PASS  fine 5deg @60fps  final=0.020 overshoot=0.991
+PASS  fine -0.5deg @120fps  final=0.020 overshoot=0.103
+PASS  fine 0.5deg @120fps  final=0.000 overshoot=0.101
+PASS  fine -1deg @120fps  final=0.020 overshoot=0.198
+PASS  fine 1deg @120fps  final=0.020 overshoot=0.198
+PASS  fine -3deg @120fps  final=0.028 overshoot=0.591
+PASS  fine 3deg @120fps  final=0.020 overshoot=0.590
+PASS  fine -5deg @120fps  final=0.000 overshoot=0.994
+PASS  fine 5deg @120fps  final=0.020 overshoot=0.992
+PASS  mouse displacement @30fps  degrees=3.75120
+PASS  sub-count mouse @30fps  delta=0.00016117131
+PASS  mouse displacement @60fps  degrees=3.75120
+PASS  sub-count mouse @60fps  delta=9.7245415E-05
+PASS  mouse displacement @120fps  degrees=3.75120
+PASS  sub-count mouse @120fps  delta=5.3854164E-05
+PASS  aircraft-specific asymmetric envelope  10/16
+PASS  observed separation reduces only affected side  7/16
+PASS  new craft discards previous learning  24
+PASS  sideslip rejects false stall learning  24
+PASS  missing wing data uses labelled fallback  12
+PASS  adaptive pull limit reaches controller  u=-0.17642206
+PASS  push protection reports limiting  AOA LIMIT
+PASS  nonfinite timestep rejected  INVALID
+PASS  airframe maneuverability is preserved  weak=8.45s strong=1.43s (same Instructor settings)
+PASS  no artificial turn without control authority  error=20.00deg; target remains unreachable
+PASS  fine pitch -0.5deg @30fps  final=0.020 overshoot=0.059
+PASS  fine pitch 0.5deg @30fps  final=0.000 overshoot=0.028
+PASS  fine pitch -1deg @30fps  final=0.000 overshoot=0.093
+PASS  fine pitch 1deg @30fps  final=0.000 overshoot=0.052
+PASS  fine pitch -3deg @30fps  final=0.020 overshoot=0.230
+PASS  fine pitch 3deg @30fps  final=0.020 overshoot=0.188
+PASS  fine pitch -0.5deg @60fps  final=0.020 overshoot=0.059
+PASS  fine pitch 0.5deg @60fps  final=0.020 overshoot=0.028
+PASS  fine pitch -1deg @60fps  final=0.020 overshoot=0.093
+PASS  fine pitch 1deg @60fps  final=0.020 overshoot=0.048
+PASS  fine pitch -3deg @60fps  final=0.028 overshoot=0.229
+PASS  fine pitch 3deg @60fps  final=0.020 overshoot=0.186
+PASS  fine pitch -0.5deg @120fps  final=0.020 overshoot=0.059
+PASS  fine pitch 0.5deg @120fps  final=0.000 overshoot=0.028
+PASS  fine pitch -1deg @120fps  final=0.020 overshoot=0.095
+PASS  fine pitch 1deg @120fps  final=0.020 overshoot=0.052
+PASS  fine pitch -3deg @120fps  final=0.020 overshoot=0.231
+PASS  fine pitch 3deg @120fps  final=0.028 overshoot=0.188
+PASS  yaw-only projection  <0.4, 0.28, -0.6>
+PASS  yaw-only projection  <0.39999986, 0.2799999, -0.5999998>
+PASS  yaw wobble settles dt=0.01  rate=-0.00002 slip=-0.00002
+PASS  yaw assist release  0
+PASS  yaw wobble settles dt=0.02  rate=-0.00003 slip=-0.00003
+PASS  yaw assist release  0
+PASS  yaw wobble settles dt=0.0333333  rate=-0.00004 slip=-0.00005
+PASS  yaw assist release  0
+PASS  coordinated turn preserved  max correction=5.4240207E-08
+PASS  yaw assistance fades at stalled AoA  -0
+PASS  yaw invalid telemetry rejected  0
+PASS  yaw assist follows fine aim intent  delta=0.0015594766
+ALL PASS
