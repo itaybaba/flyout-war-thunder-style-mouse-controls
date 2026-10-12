@@ -23,7 +23,7 @@ No separate robotics mod or MCP bridge is required to use these controls.
 
 ## Optional automatic installer
 
-Download **War-Thunder-Style-Mouse-Controls-v1-Optional-Installer.exe** from the Releases page if you prefer automatic folder detection. This is **optional**; the manual ZIP works too.
+Download **(optional)-War-Thunder-Style-Mouse-Controls-v1-Installer.exe** from the Releases page if you prefer automatic folder detection. This is **optional**; the manual ZIP works too.
 
 Close Flyout, run the installer, and click **Install mod**. It finds Flyout through Steam's registry entry and library folders, including libraries on other drives. If several installations are found, choose the one you use. If detection fails, use **Browse** to select the folder containing `Flyout.exe`.
 
@@ -121,7 +121,7 @@ On Windows, first build the mod in Release mode, then run:
 powershell -NoProfile -ExecutionPolicy Bypass -File installer/build.ps1
 ```
 
-Output: `bin/installer/War-Thunder-Style-Mouse-Controls-v1-Optional-Installer.exe`. The build embeds your compiled mod DLL and uses the Windows .NET Framework compiler. Run the executable with `--self-test` for isolated fixture checks, or `--detect-only` to write detected game folders without installing anything. These diagnostic modes write their report beside the executable.
+Output: `bin/installer/(optional)-War-Thunder-Style-Mouse-Controls-v1-Installer.exe`. The build embeds your compiled mod DLL and uses the Windows .NET Framework compiler. Run the executable with `--self-test` for isolated fixture checks, or `--detect-only` to write detected game folders without installing anything. These diagnostic modes write their report beside the executable.
 
 ## Credits and license
 
